@@ -17,7 +17,9 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "././mail/contact_me.php",
+
+              // apache-php-interface ? Vai samassa paikassa kuin App.jsx jonne kaikki viittaa ?
+                url: "./index.php",
                 type: "POST",
                 data: {
                     name: name,
